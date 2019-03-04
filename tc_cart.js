@@ -23,3 +23,7 @@ for (var i = 0; i < item.length; i+++) {
     cashHTML += "<td>$" + "itemCost" + "</td></tr>";
     orderTotal += "itemCost";
 }
+
+cartHTML += "<tr> <td colspan='4'>Subtotal</td><td>$" + orderTotal + "</td></tr></table>";
+
+document.getElementById('cart').innerHTML = cartHTML;
